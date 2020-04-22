@@ -1,0 +1,70 @@
+$color-lb: #d7fffd;
+$color-b: #a1e6e3;
+$color-r: #eca0b6;
+$color-rdark: #ec648b;
+$color-a: #fafba4;
+.menu_button {
+    cursor: pointer;
+    font-size: 3rem;
+    text-align: center;
+    text-overflow: ellipsis;
+    width: inherit;
+    white-space: nowrap;
+    border-radius: 10px;
+    color: $color-rdark;
+    letter-spacing: 0.2rem;
+    margin-bottom: 30px;
+    transition: letter-spacing 200ms ease-in, color 600ms ease-in, transform 200ms ease-in, box-shadow 200ms ease-in;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+    .icon-second {
+        transition: all 200ms ease-in;
+        position: absolute;
+        opacity: 0.2;
+        top: 1rem;
+        left: 1rem;
+    }
+    .icon-first {
+        transition: all 200ms ease-in;
+        opacity: 0;
+        height: inherit;
+        color: red;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+    &:hover {
+        color: rgba(0, 0, 0, 0.6);
+        letter-spacing: 0.5rem;
+        transform: translateY(-5px);
+        box-shadow: 0px 6px 3px 0px rgba(0, 0, 0, 0.2);
+        .icon-second {
+            transition: all 600ms ease-in;
+            margin-left: 85%;
+        }
+        .icon-first {
+            transition: all 600ms ease-in;
+            opacity: 1;
+        }
+    }
+    @media (max-width: 540px) {
+        letter-spacing: 0rem;
+        font-size: 2rem;
+        padding: 1rem;
+        text-align: center;
+        &:hover {
+            letter-spacing: 0rem;
+            .icon-second {
+                transition: all 600ms ease-in;
+                margin-left: 80%;
+            }
+        }
+        .icon-second {
+            transition: all 200ms ease-in;
+            position: absolute;
+            opacity: 0.2;
+            top: 1rem;
+            left: 1rem;
+            font-size: 1.2em;
+        }
+    }
+}

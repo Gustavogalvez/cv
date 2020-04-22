@@ -1,0 +1,71 @@
+/* You can add global styles to this file, and also import other style files */
+
+$color-lb: #d7fffd;
+$color-b: #a1e6e3;
+$color-r: #eca0b6;
+$color-a: #fafba4;
+.bg-custom-lb {
+    background-color: $color-lb !important;
+}
+
+.bg-custom-b {
+    background-color: $color-b !important;
+}
+
+.bg-custom-r {
+    background-color: $color-r !important;
+}
+
+.bg-custom-a {
+    background-color: $color-a !important;
+}
+
+.btn {
+    &:hover {
+        transition: all 200ms ease-in-out;
+        transform: translate(0px, -2px);
+        box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.75);
+    }
+    &:focus {
+        transition: all 200ms ease-in-out;
+        outline: none !important;
+        box-shadow: none !important;
+        border: none !important;
+        animation: color-rotate 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+}
+
+.btn-custom-lb {
+    color: #000 !important;
+    background-color: $color-lb !important;
+    border-color: transparent !important;
+}
+
+.btn-custom-b {
+    color: #000 !important;
+    background-color: $color-b !important;
+    border-color: transparent !important;
+}
+
+.btn-custom-r {
+    color: #fff !important;
+    background-color: $color-r !important;
+    border-color: transparent !important;
+}
+
+.btn-custom-a {
+    color: #000 !important;
+    background-color: $color-a !important;
+    border-color: transparent !important;
+}
+
+@keyframes color-rotate {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
