@@ -1,0 +1,26 @@
+.list-group-item {
+    background-color: inherit;
+}
+
+.card {
+    transition: all 600ms ease-in;
+    background-color: rgba(255, 255, 255, 0.4);
+    &:hover {
+        transition: all 200ms ease-in;
+        background-color: rgba(255, 255, 255, 1);
+    }
+}
+
+.asd {
+    content: "\f068"
+}
+
+.collapse_custom {
+    i {
+        transition: all 0.5s;
+        transform: rotate(0deg);
+    }
+    &.collapsed i {
+        transform: rotate(180deg);
+    }
+}
