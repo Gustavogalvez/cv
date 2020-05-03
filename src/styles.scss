@@ -73,3 +73,13 @@ $color-a: #fafba4;
 .pointer {
     cursor: pointer;
 }
+
+.collapse_custom {
+    i {
+        transition: all 0.5s;
+        transform: rotate(0deg);
+    }
+    &.collapsed i {
+        transform: rotate(180deg);
+    }
+}
