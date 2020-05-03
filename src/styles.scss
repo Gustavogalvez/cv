@@ -83,3 +83,9 @@ $color-a: #fafba4;
         transform: rotate(180deg);
     }
 }
+
+@media (max-width: 576px) {
+    .hidden-sm-down {
+        display: none !important;
+    }
+}

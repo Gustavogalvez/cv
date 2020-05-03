@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { AppCreadasComponent } from './home/app-creadas/app-creadas.component';
 import { EstudiosComponent } from './home/estudios/estudios.component';
 import { TooltipComponent } from '../components/comunes/tooltip/tooltip.component';
+import { TecnologiasComponent } from './home/tecnologias/tecnologias.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { TooltipComponent } from '../components/comunes/tooltip/tooltip.componen
     HomeComponent,
     AppCreadasComponent,
     EstudiosComponent,
-    TooltipComponent
+    TooltipComponent,
+    TecnologiasComponent
   ],
   imports: [
     CommonModule,
